@@ -1,0 +1,52 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "chatt-prod-20191021234034-authRole",
+			"UnauthRoleArn": "arn:aws:iam::432267630742:role/chatt-prod-20191021234034-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::432267630742:role/chatt-prod-20191021234034-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "chatt-prod-20191021234034-deployment",
+			"UnauthRoleName": "chatt-prod-20191021234034-unauthRole",
+			"StackName": "chatt-prod-20191021234034",
+			"StackId": "arn:aws:cloudformation:us-east-1:432267630742:stack/chatt-prod-20191021234034/da18a230-f496-11e9-99d1-0abd62a7624a"
+		}
+	},
+	"auth": {
+		"auth": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/chatt-prod-20191021234034-deployment/amplify-cfn-templates/auth/auth-cloudformation-template.yml",
+				"logicalId": "authauth"
+			},
+			"lastPushTimeStamp": "2019-10-22T06:49:56.917Z",
+			"output": {
+				"AppClientSecret": "2dsnfthl2k217gocd55t1u4dr7srkdin8nq7ep4s5lvtn0hrurr",
+				"UserPoolId": "us-east-1_fLWpurrZC",
+				"AppClientIDWeb": "l2se764kehhb9r5ub03n8b48t",
+				"AppClientID": "7u043n7hpfbrg4p5j95v547r9d",
+				"IdentityPoolId": "us-east-1:b14c048c-4737-44f0-a853-c2cde770ce5e",
+				"IdentityPoolName": "allamplifychatt__prod",
+				"UserPoolName": "allamplifychattuserpool"
+			},
+			"lastPushDirHash": "0OdWaZyja2g+t0HjawAmwO9tevU="
+		}
+	},
+	"api": {
+		"allamplifychatt": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"securityType": "AMAZON_COGNITO_USER_POOLS",
+				"GraphQLAPIIdOutput": "kwyzgzeokfgmrkt7slmy357pd4",
+				"GraphQLAPIEndpointOutput": "https://yddotpgew5hxxa7jxayc6hvrai.appsync-api.us-east-1.amazonaws.com/graphql"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/chatt-prod-20191021234034-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apiallamplifychatt"
+			},
+			"lastPushTimeStamp": "2019-10-22T06:49:56.917Z",
+			"lastPushDirHash": "lhBLSUpSL11kKbbjXzu7VkH+PXY="
+		}
+	}
+}

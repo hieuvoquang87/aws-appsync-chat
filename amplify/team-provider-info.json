@@ -1,0 +1,19 @@
+{
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "chatt-prod-20191021234034-authRole",
+            "UnauthRoleArn": "arn:aws:iam::432267630742:role/chatt-prod-20191021234034-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::432267630742:role/chatt-prod-20191021234034-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "chatt-prod-20191021234034-deployment",
+            "UnauthRoleName": "chatt-prod-20191021234034-unauthRole",
+            "StackName": "chatt-prod-20191021234034",
+            "StackId": "arn:aws:cloudformation:us-east-1:432267630742:stack/chatt-prod-20191021234034/da18a230-f496-11e9-99d1-0abd62a7624a"
+        },
+        "categories": {
+            "auth": {
+                "auth": {}
+            }
+        }
+    }
+}
